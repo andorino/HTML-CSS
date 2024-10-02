@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+body {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.05em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.inner {
+    max-width: 1260px;
+    width: 86.4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/*main*/
+.top {
+    background-image: url(./images/bg_main.png);
+}
+
+.topnote {
+    padding-left: 47px;
+    padding-top: 240px;
+    padding-bottom: 80px;
+}
+
+.top p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/*タイトル*/
+.kumon p {
+    display: block;
+    padding-top: 108px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 25px;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+    border-top: 1px solid #1E1E1E;
+}
+
+/*写真*/
+
+.project ul {
+    display: flex;
+}
+
+.project li {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 0 10px;
+    background-color: #F5F5F5;
+}
+
+/*footer*/
+footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+@media (min-width:740px) {
+    .allpost {
+        display: flex;
+        justify-content: space-between;
+    }
+}
