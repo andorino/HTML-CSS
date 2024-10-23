@@ -1,0 +1,169 @@
+@charset "utf-8";
+$color-text: #31353B;
+$color-catch: #FF9900;
+$color-title: #000000;
+$color-btn: #F85A47;
+
+@mixin inner($w: 90%, $mw: 1000px) {
+    max-width: $mw;
+    width: $w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flex($a: center, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
+body {
+    color: $color-text;
+    font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: (24/15);
+    letter-spacing: (20em/1000);
+}
+
+/*header*/
+.header {
+    margin-top: 50px;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+
+    &__text {
+        padding-left: 30px;
+        list-style: none;
+        font-weight: bold;
+    }
+
+}
+
+
+/*footer*/
+.footer {
+    padding: 155px 0 100px;
+    text-align: right;
+    background-color: #DBFFFF;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__copy {
+        font-size:
+            12px;
+    }
+}
+
+/*smart*/
+.smart {
+
+    &__inner {
+        @include inner();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__pic {
+        margin-top: 80px;
+    }
+}
+
+/*unit*/
+.unit {
+    width: 440px;
+
+    &__catch {
+        padding-top: 134px;
+        color: $color-catch;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: (30/18);
+    }
+
+    &__title {
+        padding-top: 20px;
+        font-size: 48px;
+        line-height: (58/48);
+    }
+
+    &__text {
+        padding-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+/*btn*/
+.btn {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    background-color: $color-btn;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*loved*/
+.loved {
+    margin-bottom: 120px;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__item {
+        margin-top: 40px;
+        width: 470px;
+        border: 1px solid #A3A3A3;
+        border-radius: 10px;
+    }
+
+    &__list {
+        @include flex();
+    }
+
+    &__catch {
+        padding-top: -134px;
+    }
+}
+
+/*card*/
+.card {
+
+    &__pic {
+        background: url(../images/pic_testimonial01.png) no-repeat left center;
+        margin-left: 40px;
+    }
+
+    &__pics {
+        background: url(../images/pic_testimonial02.png) no-repeat left center;
+        margin-left: 40px;
+    }
+
+    &__text {
+        padding-left: 70px;
+        color: $color-text;
+        font-weight: bold;
+
+    }
+
+    &__name {
+        padding-left: 70px;
+        margin-bottom: 45px;
+    }
+}
