@@ -93,13 +93,13 @@ body {
     }
 
     &__title {
+        padding-bottom: 40px;
         padding-top: 20px;
         font-size: 48px;
         line-height: (58/48);
     }
 
     &__text {
-        padding-top: 40px;
         margin-bottom: 60px;
     }
 }
@@ -127,6 +127,7 @@ body {
     }
 
     &__item {
+        padding: 45px 40px;
         margin-top: 40px;
         width: 470px;
         border: 1px solid #A3A3A3;
@@ -164,6 +165,6 @@ body {
 
     &__name {
         padding-left: 70px;
-        margin-bottom: 45px;
+
     }
 }

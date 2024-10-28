@@ -68,12 +68,12 @@ body {
   line-height: 1.6666666667;
 }
 .unit__title {
+  padding-bottom: 40px;
   padding-top: 20px;
   font-size: 48px;
   line-height: 1.2083333333;
 }
 .unit__text {
-  padding-top: 40px;
   margin-bottom: 60px;
 }
 
@@ -102,6 +102,7 @@ body {
   margin-right: auto;
 }
 .loved__item {
+  padding: 45px 40px;
   margin-top: 40px;
   width: 470px;
   border: 1px solid #A3A3A3;
@@ -133,6 +134,5 @@ body {
 }
 .card__name {
   padding-left: 70px;
-  margin-bottom: 45px;
 }
 /*# sourceMappingURL=style.css.map */
