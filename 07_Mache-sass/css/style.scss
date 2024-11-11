@@ -98,6 +98,10 @@ img {
 
     &__text {
         margin-top: 20px;
+
+        @include m-query(desktop) {
+            margin-bottom: 20px;
+        }
     }
 
     &__pic {
@@ -105,6 +109,7 @@ img {
             width: 100%;
             object-fit: cover;
             aspect-ratio: 560 / 315;
+
         }
     }
 }
@@ -161,14 +166,24 @@ img {
         font-weight: bold;
         line-height: (55/46);
 
+        span {
+            color: $color-main;
+        }
+
         @include m-query(desktop) {
             text-align: center;
         }
     }
 
     &__lead {
+
+
         @include m-query(desktop) {
             text-align: center;
+
+            span {
+                display: inline-block;
+            }
         }
     }
 }

@@ -56,6 +56,11 @@ img {
 .post__text {
   margin-top: 20px;
 }
+@media screen and (min-width: 900px) {
+  .post__text {
+    margin-bottom: 20px;
+  }
+}
 .post__pic img {
   width: 100%;
   -o-object-fit: cover;
@@ -118,6 +123,9 @@ img {
   font-weight: bold;
   line-height: 1.1956521739;
 }
+.top__title span {
+  color: #ED145B;
+}
 @media screen and (min-width: 900px) {
   .top__title {
     text-align: center;
@@ -126,6 +134,9 @@ img {
 @media screen and (min-width: 900px) {
   .top__lead {
     text-align: center;
+  }
+  .top__lead span {
+    display: inline-block;
   }
 }
 
