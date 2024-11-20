@@ -52,11 +52,125 @@ img {
   text-decoration: underline;
 }
 
+/*footer*/
+.footer {
+  padding: 7.5em 0;
+  background-color: #244d4d;
+  color: #fff;
+}
+.footer__inner {
+  width: 86.4864864865%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 740px) {
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+.footer__title {
+  margin-bottom: 1.0416666667em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2083333333;
+}
+.footer__navall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3.75em;
+}
+@media screen and (min-width: 740px) {
+  .footer__navall {
+    margin-bottom: 0;
+  }
+}
+.footer__nav {
+  width: 46.875%;
+}
+@media screen and (min-width: 740px) {
+  .footer__nav {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 3.75em;
+  }
+}
+.footer__item {
+  margin-top: 0.9375em;
+}
+.footer__info {
+  max-width: 15.625em;
+}
+.footer__info .footer__title {
+  margin-bottom: 1.6666666667em;
+}
+.footer__copy {
+  display: inline-block;
+  margin-top: 1.25em;
+  font-size: 0.75rem;
+  line-height: 1.6666666667;
+}
+
+/*post*/
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.post__pic {
+  width: 200px;
+  margin-right: 1.25em;
+}
+.post img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 740px) {
+  .post img {
+    aspect-ratio: 1/1;
+  }
+}
+.post__content {
+  flex: 1;
+}
+.post__title {
+  margin-bottom: 1.0416666667em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2083333333;
+}
+
+/*card*/
+.card {
+  padding: 2.8125em;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.card__title {
+  margin-bottom: 0.9375em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2083333333;
+}
+.card__catch {
+  margin-bottom: 1.875em;
+}
+
 /*main
 --------------------------------------*/
 .visual {
   padding: 15.625em 0 8.75em;
-  background: url(../images/bg_hero.png) no-repeat center bottom;
+  background: url(../images/bg_hero.png) no-repeat center bottom/cover;
 }
 .visual__inner {
   width: 86.4864864865%;
@@ -76,37 +190,97 @@ img {
 }
 
 /*about*/
+.about {
+  margin: 5em 0 7.5em;
+}
 .about__inner {
   width: 86.4864864865%;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.phot {
-  margin-top: 5em;
-}
-.phot__title {
+.about__title {
+  margin-bottom: 1.25em;
+  padding-bottom: 0.625em;
+  border-bottom: 2px solid;
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2083333333;
 }
-
-.post__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 740px) {
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: -3.125em;
+  }
 }
-.post__title {
-  font-size: 1.5em;
+.about__item {
+  margin-bottom: 3.125em;
+}
+@media screen and (min-width: 740px) {
+  .about__item {
+    width: 47%;
+  }
+}
+
+/*btn*/
+.btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3.75em auto 0;
+  padding: 18px 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #244d4d;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/*products*/
+.products {
+  margin: 7.5em 0;
+}
+.products__inner {
+  width: 86.4864864865%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.products__title {
+  margin-bottom: 1.25em;
+  padding-bottom: 0.625em;
+  border-bottom: 2px solid;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1.2083333333;
 }
-.post img {
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: -3.125em;
+}
+.products__item {
+  width: 46.875%;
+  margin-bottom: 3.125em;
+}
+@media screen and (min-width: 740px) {
+  .products__item {
+    width: 30%;
+  }
+}
+.products__item .card__pic {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 200/120;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 /*# sourceMappingURL=style.css.map */
