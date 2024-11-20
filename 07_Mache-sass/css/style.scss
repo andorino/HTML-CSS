@@ -144,6 +144,19 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+
+    &__testimonials {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        width: 200px;
+        display: block;
+        background-color: #EDAA14;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 17px;
+        text-align: center;
+    }
 }
 
 
@@ -214,4 +227,57 @@ img {
             width: (380/1200)*100%;
         }
     }
+}
+
+/*about
+----------------------------------*/
+
+/*services*/
+.services {
+    &__inner {
+        @include m-inner();
+    }
+
+    &__list {
+        @include m-query(desktop) {
+            @include m-flex(wrap);
+        }
+    }
+
+}
+
+/*testimonials*/
+.testimonials {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-image: url(../images/bg_testimonials.png);
+
+    &__inner {
+        @include m-inner();
+    }
+}
+
+.self {
+    &__pic {
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 37px;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+        line-height: (32/16);
+    }
+
+    &__dis {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    &__list {
+        height: 568px;
+        background-color: #FFFFFF;
+    }
+
 }
