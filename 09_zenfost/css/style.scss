@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+$color-text: #1B2D55;
+$color-main: #FFF5DE;
+
+$breakpoints: (
+    "desktop": "screen and (min-width: 740px)",
+    ) !default;
+
+@mixin m-query($breakpoint: "desktop") {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin m-inner($w: (640/740)*100%, $mw: 1000px) {
+    width: $w;
+    max-width: $mw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin m-flex($a: center, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@function f-rem($value) {
+    @return ($value/14)+rem;
+}
+
+@mixin m-title-main() {
+    margin-bottom: (80em/48
+    );
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: f-rem(48);
+font-weight: bold;
+line-height: (58/48);
+}
+
+@mixin m-btn() {
+    margin-top: (60em/14);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    width: 195px;
+    text-align: center;
+    color: #FFF;
+    display: block;
+    background-color: $color-text;
+    font-weight: bold;
+}
+
+body {
+    color: $color-text;
+    font-size: f-rem(14);
+    line-height: (24/14);
+    letter-spacing: (50em/1000);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/*index
+---------------------------------------*/
+.header {
+    padding: (60em/48) 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &__inner {
+        @include m-flex();
+        @include m-inner();
+        display: block;
+    }
+
+    &__logo {
+        font-size: f-rem(48);
+        font-weight: bold;
+    }
+
+    .menu {
+
+        @include m-query(desktop) {
+            display: none;
+        }
+    }
+}
+
+/*nav*/
+.nav {
+    flex: 1;
+    display: none;
+
+    &__list {
+        @include m-flex(flex-wrap);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        margin-left: 1.875em;
+        font-size: 1rem;
+        line-height: 1.1875;
+    }
+
+    &__about {
+        margin-left: auto;
+    }
+
+}
+
+/*main
+--------------------------------------------*/
+.visual {
+    background-color: #DEF6FF;
+
+    &__inner {
+        @include m-inner();
+    }
+
+    &__title {
+        padding-top: (150em/48);
+        @include m-title-main();
+    }
+
+    &__list {
+        padding-top: (40em/14);
+    }
+
+    &__png {
+        padding-bottom: (60em/14);
+
+        @include m-query(desktop) {
+            @include m-flex();
+        }
+    }
+}
+
+.card {
+
+    &__pic {
+        text-align: center;
+        margin-bottom: (40em/14);
+    }
+
+    &__title {
+        font-size: f-rem(36);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold
+    }
+
+    &__text {
+        margin-top: (40em/14);
+    }
+}
+
+.btn {
+    &__data {
+        @include m-btn();
+        margin-bottom: (120em/14);
+    }
+
+    &__fast {
+        @include m-btn();
+        margin-bottom: (160em/14);
+    }
+
+}
+
+/*advan*/
+.advan {
+
+    &__inner {
+        @include m-inner();
+    }
+
+    &__circle {
+        margin-top: (120em/14);
+        margin-bottom: (25em/14);
+        margin-left: auto;
+        margin-right: auto;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: $color-main;
+
+    }
+
+    &__list {
+        @include m-query(desktop) {
+            @include m-flex();
+        }
+    }
+
+
+    &__title {
+        @include m-title-main();
+        text-align: center;
+    }
+
+
+
+}
+
+/*features*/
+.features {
+    background-color: $color-main;
+
+    &__inner {
+        @include m-inner();
+    }
+
+    &__circle {
+        margin-bottom: (25em/14);
+        margin-left: auto;
+        margin-right: auto;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #DEF6FF;
+    }
+
+    &__title {
+        text-align: center;
+        @include m-title-main();
+    }
+
+}
+
+.post {
+    &__title {
+        margin-bottom: (40em/36);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: f-rem(36);
+        font-weight: bold;
+        line-height: (44/36);
+    }
+
+    &__tags {
+        @include m-flex(inline-block);
+    }
+
+    &__item {
+        margin-bottom: (60em/12);
+        font-size: f-rem(12);
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        border-radius: 20px;
+        padding: 14px 0;
+        width: 140px;
+        background-color: #FFF;
+    }
+
+    &__text {
+        margin-bottom: (100em/12);
+    }
+
+    &__pic {
+        padding-bottom: (120em/12);
+    }
+}

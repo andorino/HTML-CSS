@@ -1,0 +1,232 @@
+body {
+  color: #1B2D55;
+  font-size: 1rem;
+  line-height: 1.7142857143;
+  letter-spacing: 0.05em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*index
+---------------------------------------*/
+.header {
+  padding: 1.25em 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 86.4864864865%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.header__logo {
+  font-size: 3.4285714286rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 740px) {
+  .header .menu {
+    display: none;
+  }
+}
+
+/*nav*/
+.nav {
+  flex: 1;
+  display: none;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item {
+  margin-left: 1.875em;
+  font-size: 1rem;
+  line-height: 1.1875;
+}
+.nav__about {
+  margin-left: auto;
+}
+
+/*main
+--------------------------------------------*/
+.visual {
+  background-color: #DEF6FF;
+}
+.visual__inner {
+  width: 86.4864864865%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.visual__title {
+  padding-top: 3.125em;
+  margin-bottom: 1.6666666667em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.4285714286rem;
+  font-weight: bold;
+  line-height: 1.2083333333;
+}
+.visual__list {
+  padding-top: 2.8571428571em;
+}
+.visual__png {
+  padding-bottom: 4.2857142857em;
+}
+@media screen and (min-width: 740px) {
+  .visual__png {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.card__pic {
+  text-align: center;
+  margin-bottom: 2.8571428571em;
+}
+.card__title {
+  font-size: 2.5714285714rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.card__text {
+  margin-top: 2.8571428571em;
+}
+
+.btn__data {
+  margin-top: 4.2857142857em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  width: 195px;
+  text-align: center;
+  color: #FFF;
+  display: block;
+  background-color: #1B2D55;
+  font-weight: bold;
+  margin-bottom: 8.5714285714em;
+}
+.btn__fast {
+  margin-top: 4.2857142857em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  width: 195px;
+  text-align: center;
+  color: #FFF;
+  display: block;
+  background-color: #1B2D55;
+  font-weight: bold;
+  margin-bottom: 11.4285714286em;
+}
+
+/*advan*/
+.advan__inner {
+  width: 86.4864864865%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advan__circle {
+  margin-top: 8.5714285714em;
+  margin-bottom: 1.7857142857em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #FFF5DE;
+}
+@media screen and (min-width: 740px) {
+  .advan__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.advan__title {
+  margin-bottom: 1.6666666667em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.4285714286rem;
+  font-weight: bold;
+  line-height: 1.2083333333;
+  text-align: center;
+}
+
+/*features*/
+.features {
+  background-color: #FFF5DE;
+}
+.features__inner {
+  width: 86.4864864865%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features__circle {
+  margin-bottom: 1.7857142857em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #DEF6FF;
+}
+.features__title {
+  text-align: center;
+  margin-bottom: 1.6666666667em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.4285714286rem;
+  font-weight: bold;
+  line-height: 1.2083333333;
+}
+
+.post__title {
+  margin-bottom: 1.1111111111em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5714285714rem;
+  font-weight: bold;
+  line-height: 1.2222222222;
+}
+.post__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: inline-block;
+}
+.post__item {
+  margin-bottom: 5em;
+  font-size: 0.8571428571rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  padding: 14px 0;
+  width: 140px;
+  background-color: #FFF;
+}
+.post__text {
+  margin-bottom: 8.3333333333em;
+}
+.post__pic {
+  padding-bottom: 10em;
+}
+/*# sourceMappingURL=style.css.map */
